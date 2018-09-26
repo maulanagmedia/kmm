@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="gmedia.net.id.kopkarmitramakmur.ActivityDetailPengajuan.DetailStatusPengajuan">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/rounded_shape_black_transparent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="56dp"
+            android:gravity="center_horizontal"
+            android:id="@+id/ll_title_container"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_white"
+                android:gravity="center"
+                android:id="@+id/tv_title"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:alpha="0.8"
+                android:textSize="@dimen/title_act_size"
+                android:text="Status PENGAJUAN Pinjaman" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:alpha="0.8"
+                android:background="@color/color_white">
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_white"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="@dimen/subtitle_act_size"
+                android:alpha="0.5"
+                android:id="@+id/tv_subtitle"
+                android:text="Kopkar Mitra Makmur" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_below="@id/ll_title_container"
+            android:background="@color/color_white_grey"
+            android:weightSum="1">
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/rv_detail_status"
+            android:layout_marginTop="@dimen/default_margin_top"></android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

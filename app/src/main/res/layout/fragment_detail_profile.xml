@@ -1,0 +1,479 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="gmedia.net.id.kopkarmitramakmur.NavProfile.DetailProfile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.35"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_backgrond_profile"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/tv_profile"
+                    android:src="@mipmap/ic_circle_people_white"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.15">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="@dimen/default_padding_all"
+                            android:paddingRight="@dimen/default_padding_all"
+                            android:textStyle="bold"
+                            android:gravity="center_vertical"
+                            android:id="@+id/tv_title"
+                            android:singleLine="true"
+                            android:ellipsize="end"
+                            android:text="Profile anggota"
+                            android:textAllCaps="true"
+                            android:textColor="@color/color_white"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.15">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="@dimen/default_padding_all"
+                            android:paddingRight="@dimen/default_padding_all"
+                            android:id="@+id/tv_keterangan"
+                            android:singleLine="true"
+                            android:text="Kopkar Mitra Makmur"
+                            android:ellipsize="end"
+                            android:textColor="@color/color_white"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/color_white_grey"
+            android:layout_weight="0.65">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/default_profile_container"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/default_padding_all"
+                    android:layout_marginBottom="@dimen/default_padding_all"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="@dimen/default_profile_icon"
+                            android:layout_height="@dimen/default_profile_icon"
+                            android:src="@mipmap/ic_nik"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/default_padding_all"
+                            android:layout_marginRight="@dimen/default_padding_all"
+                            android:layout_marginTop="@dimen/default_padding_all"
+                            android:text="NIK"
+                            android:textColor="@color/profile_title_color"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_nik"
+                            style="@style/formControlProfile"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/default_profile_container"
+                    android:layout_marginTop="@dimen/default_padding_all"
+                    android:layout_marginBottom="@dimen/default_padding_all"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="@dimen/default_profile_icon"
+                            android:layout_height="@dimen/default_profile_icon"
+                            android:src="@mipmap/ic_nama"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/profile_title_color"
+                            android:layout_marginTop="@dimen/default_padding_all"
+                            android:layout_marginLeft="@dimen/default_padding_all"
+                            android:layout_marginRight="@dimen/default_padding_all"
+                            android:textStyle="bold"
+                            android:text="NAMA"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_nama"
+                            style="@style/formControlProfile"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/default_profile_container"
+                    android:layout_marginTop="@dimen/default_padding_all"
+                    android:layout_marginBottom="@dimen/default_padding_all"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="@dimen/default_profile_icon"
+                            android:layout_height="@dimen/default_profile_icon"
+                            android:src="@mipmap/ic_tgl_lahir"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/profile_title_color"
+                            android:layout_marginTop="@dimen/default_padding_all"
+                            android:layout_marginLeft="@dimen/default_padding_all"
+                            android:layout_marginRight="@dimen/default_padding_all"
+                            android:textStyle="bold"
+                            android:text="TANGGAL LAHIR"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_tgl_lahir"
+                            style="@style/formControlProfile"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/default_profile_container"
+                    android:layout_marginTop="@dimen/default_padding_all"
+                    android:layout_marginBottom="@dimen/default_padding_all"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="@dimen/default_profile_icon"
+                            android:layout_height="@dimen/default_profile_icon"
+                            android:src="@mipmap/ic_departemen"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/profile_title_color"
+                            android:layout_marginTop="@dimen/default_padding_all"
+                            android:layout_marginLeft="@dimen/default_padding_all"
+                            android:layout_marginRight="@dimen/default_padding_all"
+                            android:textStyle="bold"
+                            android:text="DEPARTEMEN"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_departemen"
+                            style="@style/formControlProfile"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/default_profile_container"
+                    android:layout_marginTop="@dimen/default_padding_all"
+                    android:layout_marginBottom="@dimen/default_padding_all"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="@dimen/default_profile_icon"
+                            android:layout_height="@dimen/default_profile_icon"
+                            android:src="@mipmap/ic_plafond"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/profile_title_color"
+                            android:layout_marginTop="@dimen/default_padding_all"
+                            android:layout_marginLeft="@dimen/default_padding_all"
+                            android:layout_marginRight="@dimen/default_padding_all"
+                            android:textStyle="bold"
+                            android:text="PLAFOND"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_plafond"
+                            style="@style/formControlProfile"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/default_profile_container"
+                    android:layout_marginTop="@dimen/default_padding_all"
+                    android:layout_marginBottom="@dimen/default_padding_all"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="@dimen/default_profile_icon"
+                            android:layout_height="@dimen/default_profile_icon"
+                            android:src="@mipmap/ic_rekening"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/profile_title_color"
+                            android:layout_marginTop="@dimen/default_padding_all"
+                            android:layout_marginLeft="@dimen/default_padding_all"
+                            android:layout_marginRight="@dimen/default_padding_all"
+                            android:textStyle="bold"
+                            android:text="REKENING"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_rekening"
+                            style="@style/formControlProfile"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/default_profile_container"
+                    android:layout_marginTop="@dimen/default_padding_all"
+                    android:layout_marginBottom="@dimen/default_padding_all"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="@dimen/default_profile_icon"
+                            android:layout_height="@dimen/default_profile_icon"
+                            android:src="@mipmap/ic_email"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/profile_title_color"
+                            android:layout_marginTop="@dimen/default_padding_all"
+                            android:layout_marginLeft="@dimen/default_padding_all"
+                            android:layout_marginRight="@dimen/default_padding_all"
+                            android:textStyle="bold"
+                            android:text="EMAIL"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_email"
+                            style="@style/formControlProfile"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/default_profile_container"
+                    android:layout_marginTop="@dimen/default_padding_all"
+                    android:layout_marginBottom="@dimen/default_padding_all"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="@dimen/default_profile_icon"
+                            android:layout_height="@dimen/default_profile_icon"
+                            android:src="@mipmap/ic_no_hp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/profile_title_color"
+                            android:layout_marginTop="@dimen/default_padding_all"
+                            android:layout_marginLeft="@dimen/default_padding_all"
+                            android:layout_marginRight="@dimen/default_padding_all"
+                            android:textStyle="bold"
+                            android:text="NO HANDPHONE"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_no_hp"
+                            style="@style/formControlProfile"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>

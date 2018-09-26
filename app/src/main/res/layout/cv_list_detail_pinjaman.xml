@@ -1,0 +1,373 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:elevation="3dp"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardBackgroundColor="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl_container"
+            android:background="@drawable/rounded_shape_white_top"
+            android:layout_marginBottom="14dp"
+            android:padding="@dimen/default_small_padding">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_body_container"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:id="@+id/tv_title"
+                        android:paddingLeft="@dimen/default_padding_all"
+                        android:paddingRight="@dimen/default_padding_all"
+                        android:textColor="@color/colorPrimary"
+                        android:scrollHorizontally="false"
+                        android:ellipsize="none"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/gap_item_height"
+                    android:background="@color/color_grey_cold"
+                    android:layout_marginTop="@dimen/margin_top_item"
+                    android:layout_marginBottom="@dimen/margin_top_item"
+                    android:layout_marginRight="@dimen/margin_left_item"
+                    android:layout_marginLeft="@dimen/margin_left_item"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <!--subject -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ll_ia_jml_angsuran"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="@dimen/icon_size_small"
+                            android:layout_height="@dimen/icon_size_small"
+                            android:src="@drawable/ic_earn"
+                            android:scaleType="fitCenter"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.7"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/title_cv_size"
+                            android:text="Pokok Pinjaman"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_grey"
+                            android:scrollHorizontally="false"
+                            android:ellipsize="none"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top_list"
+                            android:textSize="@dimen/subtitle_cv_size"
+                            android:id="@+id/tv_pokok_pinjaman"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_grey_cold"
+                            android:scrollHorizontally="false"
+                            android:ellipsize="none"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/gap_item_height"
+                    android:background="@color/color_grey_cold"
+                    android:layout_marginTop="@dimen/margin_top_item"
+                    android:layout_marginBottom="@dimen/margin_top_item"
+                    android:layout_marginRight="@dimen/margin_left_item"
+                    android:layout_marginLeft="@dimen/margin_left_item"
+                    android:orientation="horizontal"
+                    android:id="@+id/ll_ia_jml_angsuran_bellow"></LinearLayout>
+
+                <!--subject -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ll_ia_subject"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="@dimen/icon_size_small"
+                            android:layout_height="@dimen/icon_size_small"
+                            android:src="@drawable/ic_salary"
+                            android:scaleType="fitCenter"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.7"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/title_cv_size"
+                            android:text="Saldo Pinjaman"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_grey"
+                            android:scrollHorizontally="false"
+                            android:ellipsize="none"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top_list"
+                            android:textSize="@dimen/subtitle_cv_size"
+                            android:id="@+id/tv_saldo_pinjaman"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_grey_cold"
+                            android:scrollHorizontally="false"
+                            android:ellipsize="none"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/gap_item_height"
+                    android:background="@color/color_grey_cold"
+                    android:layout_marginTop="@dimen/margin_top_item"
+                    android:layout_marginBottom="@dimen/margin_top_item"
+                    android:layout_marginRight="@dimen/margin_left_item"
+                    android:layout_marginLeft="@dimen/margin_left_item"
+                    android:orientation="horizontal"
+                    android:id="@+id/ll_ia_subject_bellow"></LinearLayout>
+
+                <!--subject -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ll_ia_sdh_diangsur"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="@dimen/icon_size_small"
+                            android:layout_height="@dimen/icon_size_small"
+                            android:src="@drawable/ic_payment"
+                            android:scaleType="fitCenter"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.7"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/title_cv_size"
+                            android:text="Angsuran Per Bulan"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_grey"
+                            android:scrollHorizontally="false"
+                            android:ellipsize="none"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top_list"
+                            android:textSize="@dimen/subtitle_cv_size"
+                            android:id="@+id/tv_angsuran_per_bulan"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_grey_cold"
+                            android:scrollHorizontally="false"
+                            android:ellipsize="none"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/gap_item_height"
+                    android:background="@color/color_grey_cold"
+                    android:layout_marginTop="@dimen/margin_top_item"
+                    android:layout_marginBottom="@dimen/margin_top_item"
+                    android:layout_marginRight="@dimen/margin_left_item"
+                    android:layout_marginLeft="@dimen/margin_left_item"
+                    android:orientation="horizontal"
+                    android:id="@+id/ll_ia_nilai_bellow"></LinearLayout>
+
+                <!--subject -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ll_ia_periode"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="@dimen/icon_size_small"
+                            android:layout_height="@dimen/icon_size_small"
+                            android:src="@drawable/ic_timetable"
+                            android:scaleType="fitCenter"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.7"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/title_cv_size"
+                            android:text="Periode Pinjaman"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_grey"
+                            android:scrollHorizontally="false"
+                            android:ellipsize="none"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top_list"
+                            android:textSize="@dimen/subtitle_cv_size"
+                            android:id="@+id/tv_periode_pinjaman"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_grey_cold"
+                            android:scrollHorizontally="false"
+                            android:ellipsize="none"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/gap_item_height"
+                    android:background="@color/color_grey_cold"
+                    android:layout_marginTop="@dimen/margin_top_item"
+                    android:layout_marginBottom="@dimen/margin_top_item"
+                    android:layout_marginRight="@dimen/margin_left_item"
+                    android:layout_marginLeft="@dimen/margin_left_item"
+                    android:orientation="horizontal"
+                    android:id="@+id/ll_ia_periode_bellow"></LinearLayout>
+
+                <!--subject -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ll_ia_diangsur"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="@dimen/icon_size_small"
+                            android:layout_height="@dimen/icon_size_small"
+                            android:src="@drawable/ic_management"
+                            android:scaleType="fitCenter"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.7"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="none"
+                            android:scrollHorizontally="false"
+                            android:text="Sudah Diangsur"
+                            android:textColor="@color/color_grey"
+                            android:textSize="@dimen/title_cv_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top_list"
+                            android:textSize="@dimen/subtitle_cv_size"
+                            android:id="@+id/tv_sudah_diangsur"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_grey_cold"
+                            android:scrollHorizontally="false"
+                            android:ellipsize="none"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/gap_item_height"
+                    android:background="@color/color_grey_cold"
+                    android:layout_marginTop="@dimen/margin_top_item"
+                    android:layout_marginBottom="@dimen/margin_top_item"
+                    android:layout_marginRight="@dimen/margin_left_item"
+                    android:layout_marginLeft="@dimen/margin_left_item"
+                    android:orientation="horizontal"
+                    android:id="@+id/ll_ia_diangsur_bellow"></LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

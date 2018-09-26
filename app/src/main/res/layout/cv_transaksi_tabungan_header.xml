@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl_container"
+            android:background="@color/color_white"
+            android:paddingRight="@dimen/default_small_padding"
+            android:paddingLeft="@dimen/default_small_padding"
+            android:paddingTop="2dp"
+            android:paddingBottom="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_body_container"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:paddingTop="@dimen/default_padding_all"
+                        android:paddingBottom="@dimen/default_padding_all"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/title_cv_size"
+                            android:text="Tanggal"
+                            android:gravity="center_horizontal"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_grey"
+                            android:scrollHorizontally="false"
+                            android:ellipsize="none"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/gap_item_height"
+                        android:layout_height="match_parent"
+                        android:background="@color/color_line"
+                        android:orientation="horizontal"></LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="2.2"
+                        android:paddingTop="@dimen/default_padding_all"
+                        android:paddingBottom="@dimen/default_padding_all"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/title_cv_size"
+                            android:text="Keterangan"
+                            android:gravity="center_horizontal"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_grey"
+                            android:scrollHorizontally="false"
+                            android:ellipsize="none"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/gap_item_height"
+                        android:layout_height="match_parent"
+                        android:background="@color/color_line"
+                        android:orientation="horizontal"></LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:paddingTop="@dimen/default_padding_all"
+                        android:paddingBottom="@dimen/default_padding_all"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/title_cv_size"
+                            android:text="CR/DB"
+                            android:gravity="center_horizontal"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_grey"
+                            android:scrollHorizontally="false"
+                            android:ellipsize="none"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

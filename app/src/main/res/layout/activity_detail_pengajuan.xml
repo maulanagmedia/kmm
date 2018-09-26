@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="gmedia.net.id.kopkarmitramakmur.ActivityDetailPengajuan.DetailPengajuan">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rounded_shape_black_transparent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/color_white_transparent"
+                android:id="@+id/rv_header"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/default_padding_all"
+                    android:paddingLeft="@dimen/activity_vertical_margin"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.4"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/small_item_height"
+                                android:textSize="@dimen/title_cv_size"
+                                android:text="Jenis Tabungan"
+                                android:gravity="center_vertical"
+                                android:textStyle="bold"
+                                android:id="@+id/tv_jenis_tabungan"
+                                android:textColor="@color/color_black_transparent_2"
+                                android:scrollHorizontally="false"
+                                android:ellipsize="none"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/small_item_height"
+                                android:textSize="@dimen/title_cv_size"
+                                android:id="@+id/tv_no_tabungan"
+                                android:gravity="center_vertical"
+                                android:text="No Tabungan"
+                                android:textStyle="bold"
+                                android:textColor="@color/color_black_transparent_2"
+                                android:scrollHorizontally="false"
+                                android:ellipsize="none"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.6"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/small_item_height"
+                                android:id="@+id/ll_jenis_tabungan"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.75"
+                                    android:id="@+id/tv_jenis_tabungan_val"
+                                    android:gravity="center_vertical"
+                                    android:layout_height="match_parent"
+                                    android:textColor="@color/color_black_transparent_2"
+                                    android:textSize="@dimen/title_cv_size_1"
+                                    android:scrollHorizontally="false"
+                                    android:ellipsize="none"/>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.25"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:id="@+id/ll_jenis_tabungan_btn"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/icon_size_small"
+                                        android:layout_height="@dimen/icon_size_small"
+                                        android:src="@mipmap/ic_down_menu"/>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/small_item_height"
+                                android:id="@+id/ll_no_tabungan"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.75"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/tv_no_tabungan_val"
+                                    android:gravity="center_vertical"
+                                    android:textColor="@color/color_black_transparent_2"
+                                    android:textSize="@dimen/title_cv_size_1"
+                                    android:scrollHorizontally="false"
+                                    android:ellipsize="none"/>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.25"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:id="@+id/ll_no_tabungan_btn"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/icon_size_small"
+                                        android:layout_height="@dimen/icon_size_small"
+                                        android:src="@mipmap/ic_down_menu"/>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="1">
+                    <LinearLayout
+                        android:layout_height="@dimen/gap_item_height"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:background="@color/color_black_transparent_2"
+                        android:orientation="horizontal"></LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/activity_vertical_margin"
+                    android:paddingLeft="@dimen/activity_vertical_margin"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.3"
+                                android:layout_marginTop="@dimen/default_small_padding"
+                                android:textSize="@dimen/title_cv_size_2"
+                                android:text="Bulan"
+                                android:gravity="center_vertical"
+                                android:textStyle="bold"
+                                android:textColor="@color/color_black_transparent_2"
+                                android:scrollHorizontally="false"
+                                android:ellipsize="none"/>
+
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.7"
+                                android:gravity="center_vertical"
+                                android:id="@+id/sp_bulan" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.3"
+                                android:layout_marginTop="@dimen/default_small_padding"
+                                android:textSize="@dimen/title_cv_size_2"
+                                android:gravity="center_vertical"
+                                android:text="Tahun"
+                                android:textStyle="bold"
+                                android:textColor="@color/color_black_transparent_2"
+                                android:scrollHorizontally="false"
+                                android:ellipsize="none"/>
+
+                            <Spinner
+                                android:id="@+id/sp_tahun"
+                                android:layout_width="match_parent"
+                                android:gravity="center_vertical"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.7"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/default_small_padding"
+                    android:paddingBottom="@dimen/default_padding_all"
+                    android:gravity="center"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.7"
+                        android:layout_height="match_parent"
+                        android:id="@+id/ll_tampilkan"
+                        android:gravity="center"
+                        android:background="@drawable/btn_add_cart">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/color_white"
+                            android:paddingLeft="@dimen/activity_vertical_margin"
+                            android:paddingRight="@dimen/activity_vertical_margin"
+                            android:paddingTop="4dp"
+                            android:paddingBottom="4dp"
+                            android:gravity="center"
+                            android:text="Tampilkan"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_below="@id/rv_header"
+                android:background="@color/color_white_grey"
+                android:weightSum="1">
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/rv_detail_pengajuan"></android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:elevation="3dp"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardBackgroundColor="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl_container"
+            android:background="@drawable/rounded_shape_white_top"
+            android:layout_marginBottom="20dp"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_body_container"
+                android:orientation="vertical">
+
+                <!--subject -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ll_ia_jml_angsuran"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="@dimen/icon_size_small"
+                            android:layout_height="@dimen/icon_size_small"
+                            android:src="@drawable/ic_management"
+                            android:scaleType="fitCenter"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.7"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/title_cv_size"
+                            android:text="Jenis Tabungan"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_grey"
+                            android:scrollHorizontally="false"
+                            android:ellipsize="none"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top_list"
+                            android:textSize="@dimen/subtitle_cv_size"
+                            android:text="Jenis Tabungan"
+                            android:id="@+id/tv_jenis_tab"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_grey_cold"
+                            android:scrollHorizontally="false"
+                            android:ellipsize="none"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/gap_item_height"
+                    android:background="@color/color_grey_cold"
+                    android:layout_marginTop="@dimen/margin_top_item"
+                    android:layout_marginBottom="@dimen/margin_top_item"
+                    android:layout_marginRight="@dimen/margin_left_item"
+                    android:layout_marginLeft="@dimen/margin_left_item"
+                    android:orientation="horizontal"
+                    android:id="@+id/ll_ia_jml_angsuran_bellow"></LinearLayout>
+
+                <!--subject -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ll_ia_subject"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="@dimen/icon_size_small"
+                            android:layout_height="@dimen/icon_size_small"
+                            android:src="@drawable/ic_bank"
+                            android:scaleType="fitCenter"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.7"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/title_cv_size"
+                            android:text="No. Tabungan"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_grey"
+                            android:scrollHorizontally="false"
+                            android:ellipsize="none"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top_list"
+                            android:textSize="@dimen/subtitle_cv_size"
+                            android:text="No Tabungan"
+                            android:id="@+id/tv_no_tab"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_grey_cold"
+                            android:scrollHorizontally="false"
+                            android:ellipsize="none"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/gap_item_height"
+                    android:background="@color/color_grey_cold"
+                    android:layout_marginTop="@dimen/margin_top_item"
+                    android:layout_marginBottom="@dimen/margin_top_item"
+                    android:layout_marginRight="@dimen/margin_left_item"
+                    android:layout_marginLeft="@dimen/margin_left_item"
+                    android:orientation="horizontal"
+                    android:id="@+id/ll_ia_subject_bellow"></LinearLayout>
+
+                <!--subject -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ll_ia_sdh_diangsur"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="@dimen/icon_size_small"
+                            android:layout_height="@dimen/icon_size_small"
+                            android:src="@drawable/ic_properties"
+                            android:scaleType="fitCenter"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.7"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/title_cv_size"
+                            android:text="Keterangan"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_grey"
+                            android:scrollHorizontally="false"
+                            android:ellipsize="none"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top_list"
+                            android:textSize="@dimen/subtitle_cv_size"
+                            android:text="Keterangan"
+                            android:id="@+id/tv_ia_keterangan"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_grey_cold"
+                            android:scrollHorizontally="false"
+                            android:ellipsize="none"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/gap_item_height"
+                    android:background="@color/color_grey_cold"
+                    android:layout_marginTop="@dimen/margin_top_item"
+                    android:layout_marginBottom="@dimen/margin_top_item"
+                    android:layout_marginRight="@dimen/margin_left_item"
+                    android:layout_marginLeft="@dimen/margin_left_item"
+                    android:orientation="horizontal"
+                    android:id="@+id/ll_ia_nilai_bellow"></LinearLayout>
+
+                <!--subject -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ll_ia_saldo"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="@dimen/icon_size_small"
+                            android:layout_height="@dimen/icon_size_small"
+                            android:src="@drawable/ic_contacts"
+                            android:scaleType="fitCenter"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.7"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/title_cv_size"
+                            android:text="Total"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_grey"
+                            android:scrollHorizontally="false"
+                            android:ellipsize="none"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top_list"
+                            android:textSize="@dimen/subtitle_cv_size"
+                            android:text="Total"
+                            android:id="@+id/tv_total"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_grey_cold"
+                            android:scrollHorizontally="false"
+                            android:ellipsize="none"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/gap_item_height"
+                    android:background="@color/color_grey_cold"
+                    android:layout_marginTop="@dimen/margin_top_item"
+                    android:layout_marginBottom="@dimen/margin_top_item"
+                    android:layout_marginRight="@dimen/margin_left_item"
+                    android:layout_marginLeft="@dimen/margin_left_item"
+                    android:orientation="horizontal"
+                    android:id="@+id/ll_ia_saldo_bellow"></LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

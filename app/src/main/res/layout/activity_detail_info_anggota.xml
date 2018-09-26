@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="gmedia.net.id.kopkarmitramakmur.MenuJaket.DetailInfoJaket">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_black_transparent"
+        android:weightSum="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.22"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.55"
+                android:paddingLeft="@dimen/default_padding_all"
+                android:paddingRight="@dimen/default_padding_all">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/default_small_padding"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="0.4"
+                        android:layout_height="0dp"
+                        android:gravity="bottom"
+                        android:textColor="@color/color_white"
+                        android:textSize="11sp"
+                        android:text="Nama"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="0.6"
+                        android:layout_height="0dp"
+                        android:textColor="@color/color_white"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:id="@+id/tv_nama"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.45"
+                android:background="@color/color_white_transparent"
+                android:paddingRight="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.3"
+                            android:layout_marginTop="@dimen/default_small_padding"
+                            android:textSize="@dimen/title_cv_size_2"
+                            android:text="Bulan"
+                            android:gravity="center_vertical"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_grey"
+                            android:scrollHorizontally="false"
+                            android:ellipsize="none"/>
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.7"
+                            android:gravity="center_vertical"
+                            android:id="@+id/sp_bulan" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.3"
+                            android:layout_marginTop="@dimen/default_small_padding"
+                            android:textSize="@dimen/title_cv_size_2"
+                            android:gravity="center_vertical"
+                            android:text="Tahun"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_grey"
+                            android:scrollHorizontally="false"
+                            android:ellipsize="none"/>
+
+                        <Spinner
+                            android:id="@+id/sp_tahun"
+                            android:layout_width="match_parent"
+                            android:gravity="center_vertical"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.7"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.78"
+            android:background="@color/color_white"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/default_profile_container"
+                        android:layout_marginTop="@dimen/default_padding_all"
+                        android:layout_marginBottom="@dimen/default_padding_all"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="@dimen/default_profile_icon"
+                                android:layout_height="@dimen/default_profile_icon"
+                                android:src="@mipmap/ic_pokok"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.8"
+                            android:gravity="center_vertical"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/profile_title_color"
+                                android:layout_marginTop="@dimen/default_padding_all"
+                                android:layout_marginLeft="@dimen/default_padding_all"
+                                android:layout_marginRight="@dimen/default_padding_all"
+                                android:textStyle="bold"
+                                android:text="TOTAL SIMPANAN POKOK"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tv_total_pokok"
+                                style="@style/formControlProfile"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/default_profile_container"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/default_padding_all"
+                        android:layout_marginBottom="@dimen/default_padding_all"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="@dimen/default_profile_icon"
+                                android:layout_height="@dimen/default_profile_icon"
+                                android:src="@mipmap/ic_wajib"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.8"
+                            android:gravity="center_vertical"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/default_padding_all"
+                                android:layout_marginRight="@dimen/default_padding_all"
+                                android:layout_marginTop="@dimen/default_padding_all"
+                                android:text="TOTAL SIMPANAN WAJIB"
+                                android:textColor="@color/profile_title_color"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tv_total_wajib"
+                                style="@style/formControlProfile"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/default_profile_container"
+                        android:layout_marginTop="@dimen/default_padding_all"
+                        android:layout_marginBottom="@dimen/default_padding_all"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="@dimen/default_profile_icon"
+                                android:layout_height="@dimen/default_profile_icon"
+                                android:src="@mipmap/ic_kesetiaan"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.8"
+                            android:gravity="center_vertical"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/profile_title_color"
+                                android:layout_marginTop="@dimen/default_padding_all"
+                                android:layout_marginLeft="@dimen/default_padding_all"
+                                android:layout_marginRight="@dimen/default_padding_all"
+                                android:textStyle="bold"
+                                android:text="TOTAL SIMPANAN KESETIAAN"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tv_total_kesetiaan"
+                                style="@style/formControlProfile"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/default_profile_container"
+                        android:layout_marginTop="@dimen/default_padding_all"
+                        android:layout_marginBottom="@dimen/default_padding_all"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="@dimen/default_profile_icon"
+                                android:layout_height="@dimen/default_profile_icon"
+                                android:src="@mipmap/ic_sukarela"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.8"
+                            android:gravity="center_vertical"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/profile_title_color"
+                                android:layout_marginTop="@dimen/default_padding_all"
+                                android:layout_marginLeft="@dimen/default_padding_all"
+                                android:layout_marginRight="@dimen/default_padding_all"
+                                android:textStyle="bold"
+                                android:text="TOTAL SIMPANAN SUKARELA"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tv_total_sukarela"
+                                style="@style/formControlProfile"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@mipmap/ic_home"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_profile_kmm"
+            android:icon="@mipmap/ic_profile_kmm"
+            android:title="Profile KMM" />
+
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@mipmap/ic_news"
+            android:title="News"
+            android:visible="false"/>
+
+        <item
+            android:id="@+id/nav_setoran"
+            android:icon="@drawable/ic_salary"
+            android:visible="false"
+            android:title="Setoran Simpanan" />
+
+        <item
+            android:id="@+id/nav_penarikan"
+            android:icon="@drawable/ic_income"
+            android:visible="false"
+            android:title="Penarikan Simpanan" />
+
+        <item
+            android:id="@+id/nav_pinjaman"
+            android:icon="@drawable/ic_earn"
+            android:visible="false"
+            android:title="Pengajuan Pinjaman" />
+    </group>
+
+    <item android:title="Profile">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_profile"
+                    android:icon="@mipmap/ic_people"
+                    android:title="Profile" />
+                <item
+                    android:id="@+id/nav_ubah_password"
+                    android:icon="@mipmap/ic_lock"
+                    android:title="Ubah Password" />
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@mipmap/ic_cross"
+                    android:title="Logout" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:orientation="vertical"
+        android:background="@color/color_white"
+        android:weightSum="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:id="@+id/rv_list_barang"></android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.15"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:background="@color/color_white_grey">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:text="Total Harga"
+                    android:paddingLeft="@dimen/default_padding_all"
+                    android:paddingRight="@dimen/default_padding_all"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:gravity="right"
+                    android:textSize="20dp"
+                    android:id="@+id/tv_total"
+                    android:textStyle="bold"
+                    android:paddingLeft="@dimen/default_padding_all"
+                    android:paddingRight="@dimen/default_padding_all"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:background="@color/color_white"
+            android:gravity="center"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_add_cart"
+                android:gravity="center"
+                android:id="@+id/ll_remove_all"
+                android:paddingRight="@dimen/default_padding_all"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:text="Hapus Semua"
+                    android:padding="2dp"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/color_white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_cancel"
+                android:layout_marginLeft="@dimen/default_padding_all"
+                android:gravity="center"
+                android:id="@+id/ll_cancel"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/ic_checkout"
+                    android:scaleType="fitCenter"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:text="Simpan"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/color_white"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

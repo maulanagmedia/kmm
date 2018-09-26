@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl_container"
+            android:background="@color/color_white"
+            android:paddingTop="1dp"
+            android:paddingRight="@dimen/default_small_padding"
+            android:paddingLeft="@dimen/default_small_padding">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_body_container"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="2.6"
+                        android:paddingTop="@dimen/default_padding_all"
+                        android:paddingBottom="@dimen/default_padding_all"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_transaksi_tabungan"
+                            android:textSize="@dimen/subtitle_cv_size_1"
+                            android:gravity="left"
+                            android:paddingRight="2dp"
+                            android:paddingLeft="2dp"
+                            android:id="@+id/tv_keterangan"
+                            android:scrollHorizontally="false"
+                            android:ellipsize="none"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1.4"
+                        android:paddingBottom="@dimen/default_padding_all"
+                        android:paddingTop="@dimen/default_padding_all"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_saldo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_transaksi_tabungan"
+                            android:layout_marginRight="@dimen/default_small_padding"
+                            android:ellipsize="none"
+                            android:gravity="center_vertical|right"
+                            android:scrollHorizontally="false"
+                            android:text="0"
+                            android:textSize="@dimen/subtitle_cv_size_1" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/gap_item_height"
+                    android:background="@color/color_line"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="@dimen/default_padding_all"
+                    android:layout_marginLeft="@dimen/default_padding_all"></LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,99 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="CustomNavigationView">
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="CustomSwitch" parent="Theme.AppCompat.Light">
+        <!--<item name="colorAccent">@color/colorAccent</item> &lt;!&ndash;on&ndash;&gt;
+        <item name="colorSwitchThumbNormal"></item> &lt;!&ndash;off&ndash;&gt;-->
+    </style>
+
+    <style name="SubtitleMenu">
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:paddingLeft">@dimen/activity_vertical_margin</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <style name="IconMenu">
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:paddingRight">5dp</item>
+    </style>
+
+    <style name="DisablePreview" >
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="formControlProfile">
+        <item name="android:paddingLeft">@dimen/default_padding_all</item>
+        <item name="android:paddingRight">@dimen/default_padding_all</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:scrollHorizontally">false</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="CustomLoginDialogBar" parent="Theme.AppCompat.Dialog">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/color_white</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <!--<style name="AlertDialog1" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/color_blue1</item>
+    </style>-->
+
+    <style name="AlertDialog1" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!--item RadioButton or CheckBox color-->
+        <item name="colorControlNormal">@color/color_white</item>
+        <item name="colorControlActivated">@color/color_white</item>
+        <!--item text color-->
+        <item name="textColorAlertDialogListItem">@android:color/white</item>
+        <!--buttons color-->
+        <item name="colorAccent">@color/color_white</item>
+        <!--title and message color-->
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <!--dialog background-->
+        <item name="android:windowBackground">@drawable/bg_spinner_1</item>
+    </style>
+
+    <style name="AlertDialog2" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!--item RadioButton or CheckBox color-->
+        <item name="colorControlNormal">@color/color_white</item>
+        <item name="colorControlActivated">@color/color_white</item>
+        <!--item text color-->
+        <item name="textColorAlertDialogListItem">@android:color/white</item>
+        <!--buttons color-->
+        <item name="colorAccent">@color/color_white</item>
+        <!--title and message color-->
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <!--dialog background-->
+        <item name="android:windowBackground">@drawable/bg_spinner_2</item>
+    </style>
+
+</resources>

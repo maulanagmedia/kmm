@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail_info_tabungan"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="gmedia.net.id.kopkarmitramakmur.MenuInformasiTabungan.DetailInfoTabungan">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/rounded_shape_black_transparent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="40dp"
+            android:gravity="center_horizontal"
+            android:id="@+id/ll_title_container"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_white"
+                android:gravity="center"
+                android:id="@+id/tv_title"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:alpha="0.8"
+                android:textSize="@dimen/title_act_size"
+                android:text="Info Tabungan" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:alpha="0.8"
+                android:background="@color/color_white">
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_white"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="@dimen/subtitle_act_size"
+                android:alpha="0.5"
+                android:id="@+id/tv_subtitle"
+                android:text="Kopkar Mitra Makmur" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_white"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="@dimen/subtitle_act_size"
+                android:alpha="0.5"
+                android:id="@+id/tv_dept"
+                android:text="Dept" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_below="@id/ll_title_container">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.85"
+                android:scrollbarSize="1dp"
+                android:background="@color/color_white_grey">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/activity_vertical_margin"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:id="@+id/ll_main">
+
+                    <!--No Tabungan-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.3"
+                            android:gravity="center"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="@dimen/icon_size_small"
+                                android:layout_height="@dimen/icon_size_small"
+                                android:src="@drawable/ic_postcard"
+                                android:scaleType="fitCenter"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.7"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/title_cv_size"
+                                android:text="Jenis Tabungan"
+                                android:textStyle="bold"
+                                android:textColor="@color/color_grey"
+                                android:scrollHorizontally="false"
+                                android:ellipsize="none"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.8"
+                                    android:id="@+id/tv_jenis_tabungan"
+                                    android:layout_marginTop="@dimen/margin_top_list"
+                                    android:gravity="center_vertical"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/subtitle_cv_size2"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/color_grey_cold"
+                                    android:scrollHorizontally="false"
+                                    android:ellipsize="none"/>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.2"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:id="@+id/ll_jenis_tabungan_btn"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/icon_size_small"
+                                        android:layout_height="@dimen/icon_size_small"
+                                        android:src="@mipmap/ic_dropdown_menu"/>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/gap_item_height"
+                        android:background="@color/color_grey_cold"
+                        android:layout_marginTop="@dimen/margin_top_item"
+                        android:layout_marginBottom="@dimen/margin_top_item"
+                        android:layout_marginRight="@dimen/margin_left_item"
+                        android:layout_marginLeft="@dimen/margin_left_item"
+                        android:orientation="horizontal"></LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/ll_no_tabungan">
+
+                        <!--No Tabungan-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="0.3"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="@dimen/icon_size_small"
+                                    android:layout_height="@dimen/icon_size_small"
+                                    android:src="@drawable/ic_management"
+                                    android:scaleType="fitCenter"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="0.7"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/title_cv_size"
+                                    android:text="No Tabungan"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/color_grey"
+                                    android:scrollHorizontally="false"
+                                    android:ellipsize="none"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_weight="0.8"
+                                        android:id="@+id/tv_no_tabungan"
+                                        android:layout_marginTop="@dimen/margin_top_list"
+                                        android:gravity="center_vertical"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/subtitle_cv_size2"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/color_grey_cold"
+                                        android:scrollHorizontally="false"
+                                        android:ellipsize="none"/>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight="0.2"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        android:id="@+id/ll_no_tabungan_btn"
+                                        android:gravity="center">
+
+                                        <ImageView
+                                            android:layout_width="@dimen/icon_size_small"
+                                            android:layout_height="@dimen/icon_size_small"
+                                            android:src="@mipmap/ic_dropdown_menu"/>
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/gap_item_height"
+                            android:background="@color/color_grey_cold"
+                            android:layout_marginTop="@dimen/margin_top_item"
+                            android:layout_marginBottom="@dimen/margin_top_item"
+                            android:layout_marginRight="@dimen/margin_left_item"
+                            android:layout_marginLeft="@dimen/margin_left_item"
+                            android:orientation="horizontal"></LinearLayout>
+                    </LinearLayout>
+
+                    <!--Atas Nama-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.3"
+                            android:gravity="center"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="@dimen/icon_size_small"
+                                android:layout_height="@dimen/icon_size_small"
+                                android:src="@drawable/ic_contacts"
+                                android:scaleType="fitCenter"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.7"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/title_cv_size"
+                                android:text="Atas Nama"
+                                android:textStyle="bold"
+                                android:textColor="@color/color_grey"
+                                android:scrollHorizontally="false"
+                                android:ellipsize="none"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_top_list"
+                                android:textSize="@dimen/subtitle_cv_size2"
+                                android:id="@+id/tv_nama"
+                                android:textStyle="bold"
+                                android:textColor="@color/color_grey_cold"
+                                android:scrollHorizontally="false"
+                                android:ellipsize="none"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/gap_item_height"
+                        android:visibility="gone"
+                        android:background="@color/color_grey_cold"
+                        android:layout_marginTop="@dimen/margin_top_item"
+                        android:layout_marginBottom="@dimen/margin_top_item"
+                        android:layout_marginRight="@dimen/margin_left_item"
+                        android:layout_marginLeft="@dimen/margin_left_item"
+                        android:orientation="horizontal"></LinearLayout>
+
+                    <!--Bunga / bulan-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.3"
+                            android:gravity="center"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="@dimen/icon_size_small"
+                                android:layout_height="@dimen/icon_size_small"
+                                android:src="@drawable/ic_earn"
+                                android:scaleType="fitCenter"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.7"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/title_cv_size"
+                                android:text="Bunga/Bulan (%)"
+                                android:textStyle="bold"
+                                android:textColor="@color/color_grey"
+                                android:scrollHorizontally="false"
+                                android:ellipsize="none"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_top_list"
+                                android:textSize="@dimen/subtitle_cv_size2"
+                                android:text="Bunga"
+                                android:id="@+id/tv_bunga"
+                                android:textStyle="bold"
+                                android:textColor="@color/color_grey_cold"
+                                android:scrollHorizontally="false"
+                                android:ellipsize="none"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/gap_item_height"
+                        android:background="@color/color_grey_cold"
+                        android:layout_marginTop="@dimen/margin_top_item"
+                        android:layout_marginBottom="@dimen/margin_top_item"
+                        android:layout_marginRight="@dimen/margin_left_item"
+                        android:layout_marginLeft="@dimen/margin_left_item"
+                        android:orientation="horizontal"></LinearLayout>
+
+                    <!--Tabungan-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.3"
+                            android:gravity="center"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="@dimen/icon_size_small"
+                                android:layout_height="@dimen/icon_size_small"
+                                android:src="@drawable/ic_bank"
+                                android:scaleType="fitCenter"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.7"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/title_cv_size"
+                                android:text="Total"
+                                android:textStyle="bold"
+                                android:textColor="@color/color_grey"
+                                android:scrollHorizontally="false"
+                                android:ellipsize="none"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_top_list"
+                                android:textSize="@dimen/subtitle_cv_size"
+                                android:id="@+id/tv_total"
+                                android:textStyle="bold"
+                                android:textColor="@color/color_grey_cold"
+                                android:scrollHorizontally="false"
+                                android:ellipsize="none"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/gap_item_height"
+                        android:background="@color/color_grey_cold"
+                        android:layout_marginTop="@dimen/margin_top_item"
+                        android:layout_marginBottom="@dimen/margin_top_item"
+                        android:layout_marginRight="@dimen/margin_left_item"
+                        android:layout_marginLeft="@dimen/margin_left_item"
+                        android:orientation="horizontal"></LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:visibility="gone"
+                        android:layout_marginRight="@dimen/margin_left_item"
+                        android:layout_marginLeft="@dimen/margin_left_item"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:text="Dipotong Gaji"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_grey"
+                            android:id="@+id/cb_potong_gaji" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.15"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:id="@+id/ll_download_mutasi"
+                    android:background="@drawable/btn_black_transparent"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@mipmap/ic_download_white_blue"
+                        android:scaleType="fitCenter"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_white"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:alpha="0.8"
+                        android:textSize="12dp"
+                        android:textAllCaps="true"
+                        android:text="Download mutasi" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:id="@+id/ll_tampil_transaksi"
+                    android:background="@drawable/btn_black_transparent"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@mipmap/ic_search_transparent"
+                        android:scaleType="fitCenter"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_white"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:alpha="0.8"
+                        android:textSize="12dp"
+                        android:textAllCaps="true"
+                        android:text="TAMPILKAN TRANSAKSI" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

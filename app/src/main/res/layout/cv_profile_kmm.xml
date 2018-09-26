@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/default_padding_all"
+        android:layout_marginLeft="@dimen/default_padding_all"
+        android:layout_marginRight="@dimen/default_padding_all"
+        android:layout_marginBottom="2dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:scrollHorizontally="false"
+                android:textStyle="bold"
+                android:textSize="@dimen/subtitle_cv_size"
+                android:id="@+id/tv_title"
+                android:textColor="@color/profile_title_color"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <gmedia.net.id.kopkarmitramakmur.CustomView.JustifiedTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_keterangan"
+                android:paddingRight="2dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="2dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

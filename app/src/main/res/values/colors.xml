@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3b7dbc</color>
+    <color name="colorPrimaryDark">#0473b7</color>
+    <color name="colorAccent">#93b2ed</color>
+
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_white_grey">#f0f0f0</color>
+    <color name="color_line">#f0f0f0</color>
+    <color name="color_black">#000000</color>
+    <color name="color_black_transparent">#44000000</color>
+    <color name="color_white_transparent">#8de4e4e4</color>
+    <color name="color_black_transparent_1">#417c7c7c</color>
+    <color name="color_black_transparent_2">#bd000000</color>
+    <color name="color_grey">#636363</color>
+    <color name="color_grey_cold">#8c8c8c</color>
+    <color name="color_blue1">#4688c3</color>
+    <color name="color_blue2">#2e8ec9</color>
+    <color name="color_blue">#2e91ce</color>
+    <color name="color_blue_white">#744b6fe4</color>
+    <color name="color_blue_cold">#1d78af</color>
+    <color name="color_blue_gray">#1060b4</color>
+    <color name="color_yellow_dark">#EEC900</color>
+    <color name="color_red1">#e35152</color>
+    <color name="color_red2">#d62426</color>
+    <color name="color_red">#E35152</color>
+    <color name="color_green_dark">#3EA055</color>
+    <color name="color_purple">#CC00FF</color>
+    <color name="color_orange">#E38217</color>
+
+    <color name="profile_title_color">#685ca4</color>
+    <color name="default_text_color">#4688c3</color>
+    <color name="color_notif">#4688c3</color>
+
+</resources>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_info_prosedure"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="gmedia.net.id.kopkarmitramakmur.MenuInfoPotongan.DetailInfoPotongan"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_black_transparent"
+        android:weightSum="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.22"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.55"
+                android:paddingLeft="@dimen/default_padding_all"
+                android:paddingRight="@dimen/default_padding_all">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/default_small_padding"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="0.4"
+                        android:layout_height="0dp"
+                        android:gravity="bottom"
+                        android:textColor="@color/color_white"
+                        android:textSize="11sp"
+                        android:text="Nama"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="0.6"
+                        android:layout_height="0dp"
+                        android:textColor="@color/color_white"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:id="@+id/tv_nama"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.45"
+                android:background="@color/color_white_transparent"
+                android:paddingRight="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.3"
+                            android:layout_marginTop="@dimen/default_small_padding"
+                            android:textSize="@dimen/title_cv_size_2"
+                            android:text="Bulan"
+                            android:gravity="center_vertical"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_grey"
+                            android:scrollHorizontally="false"
+                            android:ellipsize="none"/>
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.7"
+                            android:gravity="center_vertical"
+                            android:id="@+id/sp_bulan" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.3"
+                            android:layout_marginTop="@dimen/default_small_padding"
+                            android:textSize="@dimen/title_cv_size_2"
+                            android:gravity="center_vertical"
+                            android:text="Tahun"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_grey"
+                            android:scrollHorizontally="false"
+                            android:ellipsize="none"/>
+
+                        <Spinner
+                            android:id="@+id/sp_tahun"
+                            android:layout_width="match_parent"
+                            android:gravity="center_vertical"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.7"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.78"
+            android:background="@color/color_white"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.9"
+                android:id="@+id/rv_list_potongan"></android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:background="@color/color_white_grey">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:text="Total Potongan"
+                        android:paddingLeft="@dimen/default_padding_all"
+                        android:paddingRight="@dimen/default_padding_all"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/tv_total"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="@dimen/default_padding_all"
+                        android:paddingRight="@dimen/default_padding_all"
+                        android:paddingTop="2dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

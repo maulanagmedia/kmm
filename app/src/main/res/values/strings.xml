@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Kopkar Mitra Makmur</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <integer name="menu_animation_duration">500</integer>
+    <integer name="menu_p_animation_duration">300</integer>
+
+    <string name="format_date">yyyy-MM-dd</string>
+    <string name="format_date_display">dd MMM yyyy</string>
+
+    <integer name="horizontal_margin">4</integer>
+    <integer name="max_item_slide">8</integer>
+    <integer name="count">5</integer>
+
+    <string name="add_cart_string">Tambahkan ke Keranjang</string>
+    <string name="edit_cart_string">Ubah Jumlah</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="runtime_permissions_txt">Mohon aktifkan semua akses</string>
+
+</resources>

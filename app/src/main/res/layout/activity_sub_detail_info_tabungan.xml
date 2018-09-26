@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sub_detail_info_tabungan"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="gmedia.net.id.kopkarmitramakmur.MenuInformasiTabungan.SubDetailInfoTabungan"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.20"
+        android:gravity="center"
+        android:background="@color/color_black_transparent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="@dimen/default_padding_all"
+            android:paddingLeft="@dimen/default_padding_all"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                android:layout_marginTop="@dimen/default_small_padding"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="0.35"
+                    android:layout_height="0dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_white"
+                    android:textSize="11sp"
+                    android:text="Saldo Akhir"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="0.65"
+                    android:layout_height="0dp"
+                    android:textColor="@color/color_white"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:id="@+id/tv_saldo_akhir"
+                    android:text="0"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                android:layout_marginTop="@dimen/default_small_padding"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="0.35"
+                    android:layout_height="0dp"
+                    android:textColor="@color/color_white"
+                    android:textSize="11sp"
+                    android:id="@+id/tv_no_tabungan"
+                    android:gravity="center_vertical"
+                    android:text="Nomor Tabungan"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="0.65"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:layout_height="0dp"
+                    android:textColor="@color/color_white"
+                    android:text="Simpanan"
+                    android:id="@+id/tv_subtitle"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:weightSum="1"
+        android:background="@color/color_white_transparent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/default_padding_all"
+                android:layout_marginRight="@dimen/default_padding_all"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_marginTop="@dimen/default_small_padding"
+                    android:textSize="@dimen/title_cv_size_2"
+                    android:text="Bulan"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_grey"
+                    android:scrollHorizontally="false"
+                    android:ellipsize="none"/>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.7"
+                    android:gravity="center_vertical"
+                    android:id="@+id/sp_bulan" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/default_padding_all"
+                android:layout_marginRight="@dimen/default_padding_all"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_marginTop="@dimen/default_small_padding"
+                    android:textSize="@dimen/title_cv_size_2"
+                    android:gravity="center_vertical"
+                    android:text="Tahun"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_grey"
+                    android:scrollHorizontally="false"
+                    android:ellipsize="none"/>
+
+                <Spinner
+                    android:id="@+id/sp_tahun"
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.7"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.13"
+        android:background="@color/color_white"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:paddingLeft="@dimen/default_padding_all"
+            android:paddingRight="@dimen/default_padding_all"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:gravity="bottom"
+                android:text="Total Debit"
+                android:textColor="@color/color_grey_cold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:gravity="top"
+                android:text="0"
+                android:id="@+id/tv_total_debit"
+                android:textSize="16sp"
+                android:textColor="@color/color_grey"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:paddingLeft="@dimen/default_padding_all"
+            android:paddingRight="@dimen/default_padding_all"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:gravity="bottom"
+                android:text="Total Kredit"
+                android:textColor="@color/color_grey_cold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:gravity="top"
+                android:text="0"
+                android:id="@+id/tv_total_kredit"
+                android:textSize="16sp"
+                android:textColor="@color/color_grey"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.57"
+        android:orientation="vertical"
+        android:background="@color/color_white_grey"
+        android:id="@+id/ll_main"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gap_item_height"
+            android:background="@color/color_white_grey"></LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rv_detail_info">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/default_small_padding"
+        android:layout_marginRight="@dimen/default_small_padding"
+        android:layout_marginTop="@dimen/default_small_padding"
+        android:layout_marginBottom="@dimen/default_small_padding"
+        android:elevation="3dp"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardBackgroundColor="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl_container"
+                android:background="@drawable/rounded_shape_white_top"
+                android:layout_marginBottom="@dimen/default_padding_all"
+                android:paddingTop="@dimen/default_padding_all"
+                android:paddingBottom="@dimen/default_small_padding"
+                android:paddingRight="@dimen/default_small_padding"
+                android:paddingLeft="@dimen/default_small_padding">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ll_body_container"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/ll_jenis_tabungan"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <!--Jenis -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ll_1"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="0.3"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/imageView2"
+                                    android:layout_width="@dimen/icon_size_small"
+                                    android:layout_height="@dimen/icon_size_small"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_management" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="0.7"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/title_cv_size"
+                                    android:text="Jenis Tabungan"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/color_grey"
+                                    android:scrollHorizontally="false"
+                                    android:ellipsize="none"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/margin_transaksi_tabungan"
+                                    android:textSize="@dimen/subtitle_cv_size"
+                                    android:text="Jenis Tabungan"
+                                    android:id="@+id/tv_jenis_tabungan"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/color_grey_cold"
+                                    android:scrollHorizontally="false"
+                                    android:ellipsize="none"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/gap_item_height"
+                            android:background="@color/color_grey_cold"
+                            android:layout_marginTop="@dimen/margin_transaksi_tabungan"
+                            android:layout_marginBottom="@dimen/margin_transaksi_tabungan"
+                            android:layout_marginRight="@dimen/margin_left_item"
+                            android:layout_marginLeft="@dimen/margin_left_item"
+                            android:orientation="horizontal"
+                            android:id="@+id/ll_1_bellow"></LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ll_no_tabungan"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <!--No -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ll_2"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="0.3"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="@dimen/icon_size_small"
+                                    android:layout_height="@dimen/icon_size_small"
+                                    android:src="@drawable/ic_properties"
+                                    android:scaleType="fitCenter"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="0.7"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/title_cv_size"
+                                    android:text="Nomor Tabungan"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/color_grey"
+                                    android:scrollHorizontally="false"
+                                    android:ellipsize="none"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/margin_transaksi_tabungan"
+                                    android:textSize="@dimen/subtitle_cv_size"
+                                    android:text="Nomor Tabungan"
+                                    android:id="@+id/tv_no_tabungan"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/color_grey_cold"
+                                    android:scrollHorizontally="false"
+                                    android:ellipsize="none"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/gap_item_height"
+                            android:background="@color/color_grey_cold"
+                            android:layout_marginTop="@dimen/margin_transaksi_tabungan"
+                            android:layout_marginBottom="@dimen/margin_transaksi_tabungan"
+                            android:layout_marginRight="@dimen/margin_left_item"
+                            android:layout_marginLeft="@dimen/margin_left_item"
+                            android:orientation="horizontal"
+                            android:id="@+id/ll_2_bellow"></LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/title_cv_size"
+                                android:text="Tanggal"
+                                android:gravity="center_horizontal"
+                                android:textStyle="bold"
+                                android:textColor="@color/color_grey"
+                                android:scrollHorizontally="false"
+                                android:ellipsize="none"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_transaksi_tabungan"
+                                android:textSize="@dimen/subtitle_cv_size"
+                                android:gravity="center"
+                                android:id="@+id/tv_tanggal"
+                                android:textStyle="bold"
+                                android:textColor="@color/color_grey_cold"
+                                android:scrollHorizontally="false"
+                                android:ellipsize="none"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/gap_item_height"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_grey_cold"
+                            android:orientation="horizontal"></LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/title_cv_size"
+                                android:text="Jumlah"
+                                android:gravity="center_horizontal"
+                                android:textStyle="bold"
+                                android:textColor="@color/color_grey"
+                                android:scrollHorizontally="false"
+                                android:ellipsize="none"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_transaksi_tabungan"
+                                android:textSize="@dimen/subtitle_cv_size"
+                                android:text="0"
+                                android:gravity="center"
+                                android:id="@+id/tv_jumlah"
+                                android:textStyle="bold"
+                                android:textColor="@color/color_grey_cold"
+                                android:scrollHorizontally="false"
+                                android:ellipsize="none"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/gap_item_height"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_grey_cold"
+                            android:orientation="horizontal"></LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/title_cv_size"
+                                android:text="Status"
+                                android:gravity="center_horizontal"
+                                android:textStyle="bold"
+                                android:textColor="@color/color_grey"
+                                android:scrollHorizontally="false"
+                                android:ellipsize="none"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_transaksi_tabungan"
+                                android:textSize="@dimen/subtitle_cv_size"
+                                android:gravity="center"
+                                android:id="@+id/tv_status"
+                                android:textStyle="bold"
+                                android:textColor="@color/color_grey_cold"
+                                android:scrollHorizontally="false"
+                                android:ellipsize="none"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ll_angsuran_container"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/gap_item_height"
+                            android:background="@color/color_grey_cold"
+                            android:layout_marginTop="@dimen/margin_transaksi_tabungan"
+                            android:layout_marginBottom="@dimen/margin_transaksi_tabungan"
+                            android:layout_marginRight="@dimen/margin_left_item"
+                            android:layout_marginLeft="@dimen/margin_left_item"
+                            android:orientation="horizontal"></LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/title_cv_size"
+                                    android:text="Lama Angsuran"
+                                    android:gravity="center_horizontal"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/color_grey"
+                                    android:scrollHorizontally="false"
+                                    android:ellipsize="none"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/margin_transaksi_tabungan"
+                                    android:textSize="@dimen/subtitle_cv_size"
+                                    android:gravity="center"
+                                    android:id="@+id/tv_lama_angsuran"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/color_grey_cold"
+                                    android:scrollHorizontally="false"
+                                    android:ellipsize="none"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="@dimen/gap_item_height"
+                                android:layout_height="match_parent"
+                                android:background="@color/color_grey_cold"
+                                android:orientation="horizontal"></LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/title_cv_size"
+                                    android:text="Jumlah Angsuran"
+                                    android:gravity="center_horizontal"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/color_grey"
+                                    android:scrollHorizontally="false"
+                                    android:ellipsize="none"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/margin_transaksi_tabungan"
+                                    android:textSize="@dimen/subtitle_cv_size"
+                                    android:gravity="center"
+                                    android:id="@+id/tv_jumlah_angsuran"
+                                    android:textStyle="bold"
+                                    android:text="0"
+                                    android:textColor="@color/color_grey_cold"
+                                    android:scrollHorizontally="false"
+                                    android:ellipsize="none"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/ll_komentar_container">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/gap_item_height"
+                            android:background="@color/color_grey_cold"
+                            android:layout_marginTop="@dimen/margin_transaksi_tabungan"
+                            android:layout_marginBottom="@dimen/margin_transaksi_tabungan"
+                            android:layout_marginRight="@dimen/margin_left_item"
+                            android:layout_marginLeft="@dimen/margin_left_item"
+                            android:orientation="horizontal"></LinearLayout>
+
+                        <!--No -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ll_5"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="0.3"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="@dimen/icon_size_small"
+                                    android:layout_height="@dimen/icon_size_small"
+                                    android:src="@drawable/ic_timetable"
+                                    android:scaleType="fitCenter"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="0.7"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/title_cv_size"
+                                    android:text="Keterangan"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/color_grey"
+                                    android:scrollHorizontally="false"
+                                    android:ellipsize="none"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/margin_transaksi_tabungan"
+                                    android:textSize="@dimen/subtitle_cv_size"
+                                    android:text="Keterangan"
+                                    android:id="@+id/tv_keterangan"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/color_grey_cold"
+                                    android:scrollHorizontally="false"
+                                    android:ellipsize="none"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/gap_item_height"
+                        android:background="@color/color_grey_cold"
+                        android:layout_marginTop="@dimen/margin_transaksi_tabungan"
+                        android:layout_marginBottom="@dimen/margin_transaksi_tabungan"
+                        android:layout_marginRight="@dimen/margin_left_item"
+                        android:layout_marginLeft="@dimen/margin_left_item"
+                        android:orientation="horizontal"
+                        android:id="@+id/ll_3_bellow"></LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:id="@+id/ll_menu_container"
+                        android:visibility="visible"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ll_detail_hapus"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:background="@drawable/btn_cancel"
+                                android:id="@+id/ll_hapus">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingTop="@dimen/default_small_padding"
+                                    android:paddingBottom="@dimen/default_small_padding"
+                                    android:paddingRight="@dimen/default_padding_all_tall"
+                                    android:paddingLeft="@dimen/default_padding_all_tall"
+                                    android:textColor="@color/color_white"
+                                    android:textStyle="bold"
+                                    android:text="Hapus Transaksi"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ll_detail_status_container"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:background="@drawable/btn_add_cart"
+                                android:id="@+id/ll_detail_status">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingTop="@dimen/default_small_padding"
+                                    android:paddingBottom="@dimen/default_small_padding"
+                                    android:paddingRight="@dimen/default_padding_all_tall"
+                                    android:paddingLeft="@dimen/default_padding_all_tall"
+                                    android:textColor="@color/color_white"
+                                    android:textStyle="bold"
+                                    android:text="Detail Status"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/default_small_padding">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/ll_slider_container"
+                    android:weightSum="1">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_header_slide"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <gmedia.net.id.kopkarmitramakmur.CustomView.WrapContentViewPager
+                            android:id="@+id/vp_image_slider"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:listitem="@layout/slider_pager_item"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentStart="true">
+
+                        </gmedia.net.id.kopkarmitramakmur.CustomView.WrapContentViewPager>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_view_pager_indicator"
+                            android:layout_width="match_parent"
+                            android:visibility="visible"
+                            android:alpha="0.7"
+                            android:layout_height="45dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:id="@+id/ll_view_pager_dot_count"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center"
+                                android:orientation="horizontal" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <!--Line 1-->
+            <LinearLayout
+                android:id="@+id/ll_line_1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/menu_height"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/ll_info_anggota"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/padding_menu"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_1"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_size_medium"
+                        android:layout_height="@dimen/icon_size_medium"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin"
+                        android:src="@mipmap/ic_info_anggota" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/foother_menu_height"
+                        android:alpha="0.9"
+                        android:background="#56B148"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8">
+
+                            <TextView
+                                style="@style/SubtitleMenu"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="INFO SIMPANAN" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/IconMenu"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2">
+
+                            <ImageView
+                                android:layout_width="@dimen/icon_width"
+                                android:layout_height="match_parent"
+                                android:src="@mipmap/ic_forward" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_info_tabungan"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/padding_menu"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_4"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/foother_menu_height"
+                        android:alpha="0.9"
+                        android:background="#F75A53"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8">
+
+                            <TextView
+                                style="@style/SubtitleMenu"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="INFO TABUNGAN" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/IconMenu"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2">
+
+                            <ImageView
+                                android:layout_width="@dimen/icon_width"
+                                android:layout_height="match_parent"
+                                android:src="@mipmap/ic_forward" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--Line 2-->
+            <LinearLayout
+                android:id="@+id/ll_line_2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/menu_height"
+                android:layout_marginTop="@dimen/padding_top_menu"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <!--Pinjaman-->
+                <LinearLayout
+                    android:id="@+id/ll_simulasi_pinjaman"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/padding_menu"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_2"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/foother_menu_height"
+                        android:alpha="0.9"
+                        android:background="#4692F2"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8">
+
+                            <TextView
+                                style="@style/SubtitleMenu"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="INFO PINJAMAN" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/IconMenu"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2">
+
+                            <ImageView
+                                android:layout_width="@dimen/icon_width"
+                                android:layout_height="match_parent"
+                                android:src="@mipmap/ic_forward" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--Jaket-->
+                <LinearLayout
+                    android:id="@+id/ll_info_jaket"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/padding_menu"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_5"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/foother_menu_height"
+                        android:alpha="0.9"
+                        android:orientation="horizontal"
+                        android:background="#C26A9C"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8">
+
+                            <TextView
+                                style="@style/SubtitleMenu"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="INFO JAKET" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/IconMenu"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2">
+
+                            <ImageView
+                                android:layout_width="@dimen/icon_width"
+                                android:layout_height="match_parent"
+                                android:src="@mipmap/ic_forward" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--Line 3-->
+            <LinearLayout
+                android:id="@+id/ll_line_3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/menu_height"
+                android:layout_marginTop="@dimen/padding_top_menu"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/ll_info_prosedur"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/padding_menu"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_3"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_info_prosedur_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/foother_menu_height"
+
+                        android:alpha="0.9"
+                        android:background="#48647C"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8">
+
+                            <TextView
+                                style="@style/SubtitleMenu"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="INFO POTONGAN" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/IconMenu"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2">
+
+                            <ImageView
+                                android:id="@+id/imageView3"
+                                android:layout_width="@dimen/icon_width"
+                                android:layout_height="match_parent"
+                                android:src="@mipmap/ic_forward" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_belanja_mandiri"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/padding_menu"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_6"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/foother_menu_height"
+                        android:alpha="0.9"
+                        android:background="#616161"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8">
+
+                            <TextView
+                                style="@style/SubtitleMenu"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="BELANJA MANDIRI" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/IconMenu"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2">
+
+                            <ImageView
+                                android:layout_width="@dimen/icon_width"
+                                android:layout_height="match_parent"
+                                android:src="@mipmap/ic_forward" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--Line 4-->
+            <LinearLayout
+                android:id="@+id/ll_line_4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/menu_height"
+                android:layout_marginTop="@dimen/padding_top_menu"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/ll_setoran"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/padding_menu"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_7"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/foother_menu_height"
+                        android:alpha="0.9"
+                        android:orientation="horizontal"
+                        android:background="#DB4A37"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8">
+
+                            <TextView
+                                style="@style/SubtitleMenu"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Setoran Simpanan"
+                                android:textAllCaps="true" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/IconMenu"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2">
+
+                            <ImageView
+                                android:layout_width="@dimen/icon_width"
+                                android:layout_height="match_parent"
+                                android:src="@mipmap/ic_forward" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_penarikan"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/padding_menu"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_8"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/foother_menu_height"
+                        android:alpha="0.9"
+                        android:orientation="horizontal"
+                        android:background="#56B148"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8">
+
+                            <TextView
+                                style="@style/SubtitleMenu"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Penarikan Simpanan"
+                                android:textAllCaps="true" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/IconMenu"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2">
+
+                            <ImageView
+                                android:layout_width="@dimen/icon_width"
+                                android:layout_height="match_parent"
+                                android:src="@mipmap/ic_forward" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--Line 6-->
+            <LinearLayout
+                android:id="@+id/ll_line_6"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/menu_height"
+                android:layout_marginTop="@dimen/padding_top_menu"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/ll_pengajuan_pinjaman"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/padding_menu"
+                    android:layout_weight="1"
+                    android:background="@drawable/img_transaksi_mandiri"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/foother_menu_height"
+                        android:alpha="0.9"
+                        android:background="#E37400"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8">
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                style="@style/SubtitleMenu"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Pengajuan Pinjaman"
+                                android:textAllCaps="true" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/IconMenu"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2">
+
+                            <ImageView
+                                android:layout_width="@dimen/icon_width"
+                                android:layout_height="match_parent"
+                                android:src="@mipmap/ic_forward" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_news"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/padding_menu"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_news"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/foother_menu_height"
+                        android:alpha="0.9"
+                        android:background="#5d5980"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8">
+
+                            <TextView
+                                style="@style/SubtitleMenu"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="News"
+                                android:textAllCaps="true" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/IconMenu"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2">
+
+                            <ImageView
+                                android:layout_width="@dimen/icon_width"
+                                android:layout_height="match_parent"
+                                android:src="@mipmap/ic_forward" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--Line 7-->
+            <LinearLayout
+                android:id="@+id/ll_line_7"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/menu_height"
+                android:layout_marginTop="@dimen/padding_top_menu"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/ll_info_belanja"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/padding_menu"
+                    android:layout_weight="1"
+                    android:background="@drawable/img_info_belanja"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/foother_menu_height"
+                        android:alpha="0.9"
+                        android:background="@color/color_grey"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8">
+
+                            <TextView
+                                style="@style/SubtitleMenu"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="INFO BELANJA" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/IconMenu"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2">
+
+                            <ImageView
+                                android:layout_width="@dimen/icon_width"
+                                android:layout_height="match_parent"
+                                android:src="@mipmap/ic_forward" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_ikut_survey"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/padding_menu"
+                    android:layout_weight="1"
+                    android:background="@drawable/img_survey"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/foother_menu_height"
+                        android:alpha="0.9"
+                        android:background="@color/color_grey"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8">
+
+                            <TextView
+                                style="@style/SubtitleMenu"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="IKUT SURVEY" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/IconMenu"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2">
+
+                            <ImageView
+                                android:layout_width="@dimen/icon_width"
+                                android:layout_height="match_parent"
+                                android:src="@mipmap/ic_forward" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
