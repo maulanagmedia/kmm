@@ -1,8 +1,8 @@
 package gmedia.net.id.kopkarmitramakmur;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 import com.google.firebase.FirebaseApp;
 
@@ -10,9 +10,8 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import gmedia.net.id.kopkarmitramakmur.NotificationUtil.InitFirebaseSetting;
-import gmedia.net.id.kopkarmitramakmur.NotificationUtil.TokenGetter;
 
-public class SplashScreen extends Activity {
+public class SplashScreen extends AppCompatActivity {
 
     Intent intent;
 

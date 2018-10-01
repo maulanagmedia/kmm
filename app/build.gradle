@@ -3,16 +3,20 @@ apply plugin: 'io.fabric' // for crashlitycs
 
 android {
     compileSdkVersion 27
-    buildToolsVersion '27.0.3'
+    buildToolsVersion '28.0.2'
     defaultConfig {
         applicationId "gmedia.net.id.kopkarmitramakmur"
         minSdkVersion 16
         targetSdkVersion 27
-        versionCode 7
-        versionName '6.0.1'
+        versionCode 8
+        versionName '6.0.2'
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
         multiDexEnabled = true
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
     }
     buildTypes {
         release {

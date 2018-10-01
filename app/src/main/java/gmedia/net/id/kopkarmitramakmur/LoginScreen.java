@@ -1,10 +1,10 @@
 package gmedia.net.id.kopkarmitramakmur;
 
-import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.text.method.PasswordTransformationMethod;
 import android.view.View;
 import android.widget.Button;
@@ -27,7 +27,7 @@ import gmedia.net.id.kopkarmitramakmur.Util.ItemValidation;
 import gmedia.net.id.kopkarmitramakmur.Util.SessionManager;
 import gmedia.net.id.kopkarmitramakmur.Util.WebServiceURL;
 
-public class LoginScreen extends Activity {
+public class LoginScreen extends AppCompatActivity {
 
     private EditText edtUsername;
     private EditText edtPassword;
@@ -51,7 +51,6 @@ public class LoginScreen extends Activity {
             overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
             return;
         }
-
 
         refreshToken = FirebaseInstanceId.getInstance().getToken();
         initUI();

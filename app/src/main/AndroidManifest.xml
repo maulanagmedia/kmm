@@ -48,7 +48,7 @@
             android:name=".SplashScreen"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.WithTitleBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -61,6 +61,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".LoginScreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.WithTitleBar"
             android:screenOrientation="portrait" />
         <activity android:name=".MenuInfoPotongan.DetailInfoPotongan" />
         <activity android:name=".MenuInfoSimpanan.DetailInfoSimpanan" />
