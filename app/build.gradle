@@ -3,7 +3,7 @@ apply plugin: 'io.fabric' // for crashlitycs
 
 android {
     compileSdkVersion 27
-    buildToolsVersion '28.0.2'
+    buildToolsVersion '28.0.3'
     defaultConfig {
         applicationId "gmedia.net.id.kopkarmitramakmur"
         minSdkVersion 16
